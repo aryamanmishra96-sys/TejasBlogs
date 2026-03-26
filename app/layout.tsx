@@ -8,7 +8,7 @@ const lora = Lora({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: 'TejasBlogs',
-  description: 'A classic newspaper-style blog by me, Tejas',
+  description: 'A classic newspaper-style blog by Tejas',
   generator: 'v0.app',
   icons: {
     icon: '/profile.jpg',

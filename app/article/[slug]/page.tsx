@@ -1,14 +1,17 @@
 import { MusicSynthesiaArticle } from '@/components/articles/MusicSynthesia';
+import { MyConnectionMusicArticle } from '@/components/articles/MyConnectionMusic';
 import Link from 'next/link';
 
 export function generateStaticParams() {
-  return [{ slug: 'music-synthesia' }];
+  return [
+    { slug: 'music-synthesia' },
+    { slug: 'my-connection-music' }
+  ];
 }
 
 export const metadata = {
-  title: 'The Intersection of Music and Synthesia | TejasBlogs',
-  description:
-    'Explore how synesthesia—the fascinating neurological phenomenon where one sense triggers another—is revolutionizing music creation and perception.',
+  title: 'Article | TejasBlogs',
+  description: 'Exploring music, technology, and the intersections between them.',
 };
 
 export default async function ArticlePage({
@@ -16,12 +19,11 @@ export default async function ArticlePage({
 }: {
   params: Promise<{ slug: string }>;
 }) {
-  // Await params in Next.js 16
   const { slug } = await params;
 
-  // Map slug to article components
   const articles: Record<string, React.ComponentType> = {
     'music-synthesia': MusicSynthesiaArticle,
+    'my-connection-music': MyConnectionMusicArticle,
   };
 
   const ArticleComponent = articles[slug];
@@ -47,7 +49,6 @@ export default async function ArticlePage({
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      {/* Navigation */}
       <nav className="border-b-2 border-border bg-card sticky top-0 z-50">
         <div className="max-w-6xl mx-auto px-4 py-4">
           <Link
@@ -59,12 +60,10 @@ export default async function ArticlePage({
         </div>
       </nav>
 
-      {/* Article Content */}
       <main className="max-w-6xl mx-auto px-4 py-12">
         <ArticleComponent />
       </main>
 
-      {/* Footer */}
       <footer className="bg-card border-t-2 border-border mt-16">
         <div className="max-w-6xl mx-auto px-4 py-8">
           <div className="flex justify-between items-center">

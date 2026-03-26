@@ -15,6 +15,16 @@ const blogPosts = [
     readTime: "8 min read",
     category: "Music",
     image: "/synesthetic-brain.jpg"
+  },
+  {
+    id: 2,
+    slug: "my-connection-music",
+    title: "My Connection with Music",
+    excerpt: "A personal journey through the strings and keys that shaped my life. From the first guitar chord to the deep groove of the bass and the harmonic space of the keyboard.",
+    date: "May 15, 2026",
+    readTime: "6 min read",
+    category: "Personal",
+    image: "https://images.unsplash.com/photo-1550291652-6ea9114a47b1?q=80&w=1000&auto=format&fit=crop"
   }
 ]
 
@@ -24,7 +34,7 @@ export default function BlogGrid() {
       <div className="max-w-6xl mx-auto px-6 py-16">
         <div className="mb-12">
           <h2 className={`${playfair.className} text-4xl font-bold text-primary mb-2`}>
-            Latest Stories
+            Latest Articles
           </h2>
           <div className="w-16 h-1 bg-accent"></div>
         </div>

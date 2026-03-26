@@ -7,7 +7,7 @@ const playfair = Playfair_Display({ subsets: ['latin'] })
 
 export default function About() {
   const [viewers, setViewers] = useState(0)
-  const [articlesPublished, setArticlesPublished] = useState(1)
+  const [articlesPublished, setArticlesPublished] = useState(2)
 
   useEffect(() => {
     // Initialize viewer count from localStorage
@@ -50,7 +50,7 @@ export default function About() {
               <ul className="space-y-3 text-muted-foreground text-sm">
                 <li className="flex gap-3">
                   <span className="text-accent font-bold">✦</span>
-                  <span>Passionate writer and storyteller</span>
+                  <span>Passionate writer and creator</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-accent font-bold">✦</span>
@@ -71,7 +71,7 @@ export default function About() {
                 Welcome to TejasBlogs
               </h2>
               <p className="text-lg text-foreground leading-relaxed mb-4">
-                I'm a writer, thinker, and digital creator dedicated to exploring the stories that shape our world. Through TejasBlogs, I share insights on technology, design, culture, and the human experience.
+                I'm a writer, thinker, and digital creator dedicated to exploring the articles that shape our world. Through TejasBlogs, I share insights on technology, design, culture, and the human experience.
               </p>
               <p className="text-lg text-foreground leading-relaxed">
                 Each article is carefully crafted to inform, inspire, and provoke thoughtful conversation. Whether you're here for deep dives into web technology, musings on design philosophy, or reflections on modern life, you'll find something worth your time.

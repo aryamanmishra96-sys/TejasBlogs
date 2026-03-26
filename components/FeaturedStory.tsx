@@ -13,8 +13,8 @@ export default function FeaturedStory() {
           {/* Featured Image */}
           <div className="lg:col-span-1">
             <img
-              src="/synesthetic-brain.jpg"
-              alt="Synesthetic brain visualization showing neural cross-sensory connections"
+              src="https://images.unsplash.com/photo-1550291652-6ea9114a47b1?q=80&w=1000&auto=format&fit=crop"
+              alt="A vintage electric guitar leaning against an amplifier"
               className="w-full h-64 lg:h-80 object-cover border border-border"
             />
           </div>
@@ -23,25 +23,25 @@ export default function FeaturedStory() {
           <div className="lg:col-span-2 flex flex-col justify-between">
             <div>
               <span className="text-muted-foreground text-sm tracking-widest uppercase">
-                Featured Story
+                Featured Article
               </span>
               <h2 className={`${playfair.className} text-4xl lg:text-5xl font-bold text-primary mt-3 mb-4`}>
-                The Intersection of Music and Synthesia
+                My Connection with Music
               </h2>
               <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
-                Explore how synesthesia—the fascinating neurological phenomenon where one sense triggers another—is revolutionizing music creation and perception. From Duke Ellington to Billie Eilish, discover how the world&apos;s greatest musicians experience sound as color.
+                A personal journey through the strings and keys that shaped my life. From the first guitar chord to the deep groove of the bass and the harmonic space of the keyboard, explore how these instruments became my voice.
               </p>
               <div className="flex gap-6 text-sm text-muted-foreground">
-                <span>March 26, 2026</span>
+                <span>May 15, 2026</span>
                 <span>•</span>
-                <span>8 min read</span>
+                <span>6 min read</span>
               </div>
             </div>
             <Link
-              href="/article/music-synthesia"
+              href="/article/my-connection-music"
               className="mt-6 inline-flex px-6 py-3 bg-primary text-primary-foreground hover:bg-accent hover:text-accent-foreground transition-colors font-semibold tracking-wide uppercase text-sm w-fit"
             >
-              Read Story
+              Read Article
             </Link>
           </div>
         </div>

@@ -23,7 +23,7 @@ export default function Header({ onNavigate }: HeaderProps) {
             </h1>
           </button>
           <p className="text-muted-foreground text-lg">
-            Thoughts, Stories, and Insights
+            Thoughts, Articles, and Insights
           </p>
         </div>
 
