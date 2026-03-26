@@ -14,7 +14,7 @@ const blogPosts = [
     date: "March 26, 2026",
     readTime: "8 min read",
     category: "Music",
-    image: "https://images.unsplash.com/photo-1511379938547-c1f69b13d835?w=400&h=300&fit=crop"
+    image: "/synesthetic-brain.jpg"
   }
 ]
 

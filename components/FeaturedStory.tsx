@@ -13,8 +13,8 @@ export default function FeaturedStory() {
           {/* Featured Image */}
           <div className="lg:col-span-1">
             <img
-              src="https://images.unsplash.com/photo-1511379938547-c1f69b13d835?w=500&h=400&fit=crop"
-              alt="Music and sound visualization"
+              src="/synesthetic-brain.jpg"
+              alt="Synesthetic brain visualization showing neural cross-sensory connections"
               className="w-full h-64 lg:h-80 object-cover border border-border"
             />
           </div>

@@ -39,7 +39,7 @@ export default function About() {
           {/* Profile Image */}
           <div className="lg:col-span-1">
             <img
-              src="/profile.jpg"
+              src="/profile.png"
               alt="Profile picture"
               className="w-full border-4 border-accent shadow-lg"
             />
